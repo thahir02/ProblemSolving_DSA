@@ -10,7 +10,7 @@ Example 3:
 Input: nums = [-1,-2,-3]
 Output: -6
 Constraints:
-3 <= nums.length <= 104
+3 <= nums.length <= 10^4
 -1000 <= nums[i] <= 1000
 */
 //Best solution 
