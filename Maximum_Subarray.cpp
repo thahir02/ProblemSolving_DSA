@@ -16,3 +16,29 @@ Constraints:
 1 <= nums.length <= 105
 -104 <= nums[i] <= 104
 */
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int n=nums.size();
+        int ans=nums[0];
+        int prev_sum=0;
+        int cur_sum;
+// By using KADANE'S ALGORITHM
+    for(int i=0;i<n;i++)
+    {
+        cur_sum =prev_sum+nums[i];
+        ans=max(ans,cur_sum);
+        prev_sum=max(0,cur_sum);
+    }
+    return ans;
+    }
+};
+// burte force
+    //    for(int i=0;i<nums.size()-1;i++){
+    //     sum=0;
+    //     for(int j=i;j<nums.size()-1;j++){
+    //         sum=sum+nums[j];
+    //         ans=max(ans,sum);
+    //     }
+    //    } 
+    //    return ans;
