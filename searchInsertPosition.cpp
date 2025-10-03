@@ -27,6 +27,7 @@ nums contains distinct values sorted in ascending order.
 -10^4 <= target <= 10^4
 Answer
 */
+// Time complexity O(n)
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
@@ -40,3 +41,26 @@ public:
         return res;
     }
 }; 
+// Time complexity O(nlogn)
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        int n=nums.size();
+        int left=0;
+        int right=n-1;
+        while(left<=right){
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target)
+            {
+                return mid;
+            }
+            else if(nums[mid]>target){
+                right=mid-1;
+            }
+            else{
+                left=mid+1;
+            }
+        }
+        return left;
+    }
+};
