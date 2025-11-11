@@ -38,3 +38,25 @@ public:
       return count;
     }
 };
+
+//Another Approch
+class Solution {
+public:
+int lengthOfLastWord(string s) {
+int count=0;
+int i=s.length()-1;
+while(s[i]==' '){
+i--;
+}
+for(int j=0;j<=i;j++){
+if(s[j]==' '){
+count=0;
+}
+else{
+count++;
+}
+}
+return count;
+}
+};
+
