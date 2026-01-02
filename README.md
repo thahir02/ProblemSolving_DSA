@@ -2,3 +2,6 @@
 <br>Coder : <b><i>SM THAHIR<i><b> 
 <br>DSA problem solving using c++<br>
 Solutions in the form of functions
+problems on
+Arrays 
+Strings
