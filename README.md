@@ -3,7 +3,11 @@
 <br>DSA problem solving using c++<br>
 Solutions in the form of functions <br>
 problems on 
+<ol>
 <li>
 Arrays 
+</li>
+<li>
 Strings
 </li>
+</ol>
